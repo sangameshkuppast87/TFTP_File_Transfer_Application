@@ -1,0 +1,83 @@
+1. Project Title:  TFTP -> Trivial File Transfer Protocol
+
+2. Name:           Sangamesh Kuppast
+
+3. Start date:     16/02/2026
+
+4. End date:       20/02/2026
+
+5. Description:  → The TFTP Client is a UDP-based file transfer application developed in C that allows users to upload and download files from a remote TFTP server.
+		 → It supports sending Read Requests (RRQ) and Write Requests (WRQ) according to the TFTP protocol specification.
+		 i→ The client handles data transmission in fixed-size blocks, acknowledgement (ACK) processing, and retransmission on timeout.
+		 → It supports both octet (binary) and netascii (text) transfer modes.
+		 → The project demonstrates networking concepts such as socket programming using UDP, packet formatting, timeout handling, and reliable data transfer over an unreliable protocol.
+
+///// Sample Execution \\\\\
+
+TFTP menu:
+1. connect
+2. get
+3. put
+4. mode
+5. exit
+Enter your operation: connect
+Enter the IP address: 127.0.0.1
+
+INFO: Connection to server successful!!
+
+TFTP menu:
+1. connect
+2. get
+3. put
+4. mode
+5. exit
+Enter your operation: put
+Enter the file name: example.txt
+
+****** READY TO SEND ******
+
+Sent block 1, bytes = 512
+Sent block 2, bytes = 347
+
+***** FILE SENT SUCCESSFULLY *****
+
+TFTP menu:
+1. connect
+2. get
+3. put
+4. mode
+5. exit
+Enter your operation: get
+Enter the filename youb want to recieve: example.txt
+
+****** READY TO RECEIVE ******
+
+Received block 1, bytes = 512
+Received block 2, bytes = 347
+
+***** FILE RECEIVED SUCCESSFULLY *****
+
+TFTP menu:
+1. connect
+2. get
+3. put
+4. mode
+5. exit
+Enter your operation: mode
+MENU:
+1. Normal
+2. Octet
+3. Netascii
+Enter the Option:octet
+CURRENT MODE = octet
+
+TFTP menu:
+1. connect
+2. get
+3. put
+4. mode
+5. exit
+Enter your operation: exit
+
+Diconnecting from the server!!!
+Exiting....
