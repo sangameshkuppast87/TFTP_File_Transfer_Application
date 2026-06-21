@@ -1,0 +1,34 @@
+1. Project Title:  TFTP -> Trivial File Transfer Protocol
+
+2. Name:           Sangamesh Kuppast
+
+3. Start date:     16/02/2026
+
+4. End date:       20/02/2026
+
+5. Description:	   → The TFTP Server is a UDP-based file transfer service implemented in C that listens for client requests and serves files upon demand.
+		   → It supports handling Read Requests (RRQ) and Write Requests (WRQ) from multiple clients sequentially.
+		   → The server manages file I/O operations, packet segmentation into data blocks, and acknowledgement (ACK) generation for reliable transfer.
+		   → It implements error handling for invalid requests, missing files, access violations, and transfer timeouts.
+		   → The project demonstrates core networking and operating system concepts such as socket communication, file system interaction, process control, and protocol implementation.
+
+
+///// Sample Execution \\\\\
+
+
+TFTP Server listening on port 6969...
+
+***** READY TO RECEIVE *****
+
+Received block 1, bytes = 512
+Received block 2, bytes = 347
+
+***** FILE RECEIVED SUCCESSFULLY *****
+
+
+***** READY TO SEND *****
+
+Sent block 1, bytes = 512
+Sent block 2, bytes = 347
+
+***** FILE SENT SUCCESSFULLY *****
